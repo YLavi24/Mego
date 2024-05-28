@@ -1,0 +1,7 @@
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\bin\Debug\27.5.24.exe.config
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\bin\Debug\27.5.24.exe
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\bin\Debug\27.5.24.pdb
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\obj\Debug\27.5.24.csproj.AssemblyReference.cache
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\obj\Debug\27.5.24.csproj.CoreCompileInputs.cache
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\obj\Debug\27.5.24.exe
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\27.5.24\obj\Debug\27.5.24.pdb

@@ -1,0 +1,106 @@
+כדי לבנות שעון בן 24 שעות שבו כל שעה מחולקת ל-1080 חלקים וכל חלק מחולק ל-76 רגעים, נשתמש ב-HTML, CSS ו-JavaScript. נבנה את השעון עם שלושה מחוגים: מחוג השעות, מחוג החלקים ומחוג הרגעים.
+
+נתחיל עם ה-HTML לבניית מבנה השעון:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שעון 24 שעות</title>
+    <style>
+        .clock {
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+        }
+        .hand {
+            width: 50%;
+            height: 2px;
+            background: black;
+            position: absolute;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+            transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+        }
+        .hour-hand {
+            height: 4px;
+            background: red;
+        }
+        .part-hand {
+            height: 3px;
+            background: green;
+        }
+        .moment-hand {
+            height: 2px;
+            background: blue;
+        }
+        .center {
+            width: 10px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hand hour-hand" id="hour-hand"></div>
+        <div class="hand part-hand" id="part-hand"></div>
+        <div class="hand moment-hand" id="moment-hand"></div>
+        <div class="center"></div>
+    </div>
+    <script>
+        function updateClock() {
+            const now = new Date();
+
+            const hours = now.getHours();
+            const minutes = now.getMinutes();
+            const seconds = now.getSeconds();
+            const milliseconds = now.getMilliseconds();
+
+            const totalHours = hours % 24;
+            const totalParts = (minutes * 60 + seconds) / 80;
+            const totalMoments = ((minutes * 60 + seconds) * 1000 + milliseconds) / 800;
+
+            const hourDeg = (totalHours / 24) * 360;
+            const partDeg = (totalParts / 1080) * 360;
+            const momentDeg = (totalMoments / (1080 * 76)) * 360;
+
+            document.getElementById('hour-hand').style.transform = `rotate(${hourDeg + 90}deg)`;
+            document.getElementById('part-hand').style.transform = `rotate(${partDeg + 90}deg)`;
+            document.getElementById('moment-hand').style.transform = `rotate(${momentDeg + 90}deg)`;
+        }
+
+        setInterval(updateClock, 50);
+        updateClock();
+    </script>
+</body>
+</html>
+```
+
+### הסברים:
+
+- **HTML**:
+  - יצרנו מבנה בסיסי לשעון עם שלושה מחוגים: מחוג השעות (`hour-hand`), מחוג החלקים (`part-hand`) ומחוג הרגעים (`moment-hand`).
+  - מרכז השעון (`center`) משמש לנקודת ייחוס עבור המחוגים.
+
+- **CSS**:
+  - הגדרנו עיצוב בסיסי לשעון, כולל מחוגים בצבעים שונים וגודל מרכז השעון.
+  - כל מחוג מותאם באורך, צבע וגובה שונים.
+
+- **JavaScript**:
+  - הפונקציה `updateClock` מחשבת את הזוויות של כל מחוג בהתאם לזמן הנוכחי.
+  - מחלקים את הזמן ליחידות המתאימות (שעות, חלקים, רגעים) ומחשבים את הזווית המתאימה לכל מחוג.
+  - קוראים לפונקציה כל 50 מילישניות על מנת לעדכן את המחוגים בזמן אמת.
+
+כך נוכל להציג שעון בן 24 שעות עם חלוקה ל-1080 חלקים ו-76 רגעים בכל חלק.

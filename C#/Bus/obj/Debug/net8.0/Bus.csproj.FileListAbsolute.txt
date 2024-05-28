@@ -1,0 +1,5 @@
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Bus\obj\Debug\net8.0\Bus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Bus\obj\Debug\net8.0\Bus.AssemblyInfoInputs.cache
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Bus\obj\Debug\net8.0\Bus.AssemblyInfo.cs
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Bus\obj\Debug\net8.0\Bus.csproj.CoreCompileInputs.cache
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Bus\obj\Debug\net8.0\Bus.sourcelink.json

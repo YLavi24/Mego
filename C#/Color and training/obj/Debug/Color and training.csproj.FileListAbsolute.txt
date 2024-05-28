@@ -1,0 +1,7 @@
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\bin\Debug\Color and training.exe.config
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\bin\Debug\Color and training.exe
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\bin\Debug\Color and training.pdb
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\obj\Debug\Color and training.csproj.AssemblyReference.cache
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\obj\Debug\Color and training.csproj.CoreCompileInputs.cache
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\obj\Debug\Color and training.exe
+C:\Users\user1\OneDrive\מסמכים\GitHub\Mego\C#\Color and training\obj\Debug\Color and training.pdb
